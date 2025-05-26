@@ -8,7 +8,7 @@ import tensorflow as tf
 load_model = tf.keras.models.load_model
 model = load_model("mnist_digit_model.h5")
 
-st.title("Multi-Digit Handwritten Recognition")
+st.title("Handwritten Digit Recognition")
 st.write("Upload an image with one or more handwritten digits (e.g., '13540').")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
